@@ -142,7 +142,7 @@ if (signatureImage) {
         x: 190,   // shift left/right
         y: 300,    // shift up/down
         width: 145,
-        height: 45,
+        height: 40,
       });
 }
 
