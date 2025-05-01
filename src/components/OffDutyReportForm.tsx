@@ -152,10 +152,10 @@ if (signatureImage) {
 
       {[
         { label: 'Badge', name: 'badge' },
-        { label: 'Date', name: 'date' },
+        { label: 'Date (worked)', name: 'date' },
         { label: 'Begin Time', name: 'beginTime' },
         { label: 'End Time', name: 'endTime' },
-        { label: 'Date (again)', name: 'date2' },
+        { label: 'Date (signed)', name: 'date2' },
         { label: 'Name', name: 'name' },
         { label: 'Business Name', name: 'businessName' },
         { label: 'Business Location', name: 'businessLocation' },
@@ -163,7 +163,7 @@ if (signatureImage) {
         { label: 'Unit', name: 'unit' },
         { label: 'Total Hours', name: 'totalHours' },
         { label: 'Hourly Rate', name: 'hourlyRate' },
-        { label: 'Rate', name: 'rate' },
+        { label: 'Rate (if more than 4)', name: 'rate' },
       ].map(({ label, name }) => (
         <div key={name}>
           <label className="block text-sm font-medium text-gray-700">{label}</label>
