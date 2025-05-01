@@ -127,6 +127,7 @@ const OffDutyReportForm = () => {
 // Draw signature on the same page as form fields (page 0)
 const [firstPage] = pdfDoc.getPages();
 
+      /*
 if (signatureImage) {
   firstPage.drawImage(signatureImage, {
     x: 400,  // Adjust based on actual signature box position
@@ -135,7 +136,15 @@ if (signatureImage) {
     height: 50,
   });
 }
-
+*/
+if (signatureImage) {
+  firstPage.drawImage(signatureImage, {
+        x: 370,   // shift left/right
+        y: 60,    // shift up/down
+        width: 160,
+        height: 50,
+      });
+}
 
       const pdfBytes = await pdfDoc.save();
       await uploadReport(pdfBytes);
