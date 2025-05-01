@@ -139,9 +139,9 @@ if (signatureImage) {
 */
 if (signatureImage) {
   firstPage.drawImage(signatureImage, {
-        x: 185,   // shift left/right
-        y: 275,    // shift up/down
-        width: 160,
+        x: 190,   // shift left/right
+        y: 300,    // shift up/down
+        width: 150,
         height: 50,
       });
 }
