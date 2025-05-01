@@ -140,7 +140,7 @@ if (signatureImage) {
 if (signatureImage) {
   firstPage.drawImage(signatureImage, {
         x: 190,   // shift left/right
-        y: 300,    // shift up/down
+        y: 305,    // shift up/down
         width: 145,
         height: 40,
       });
