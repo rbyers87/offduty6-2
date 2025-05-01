@@ -124,16 +124,18 @@ const OffDutyReportForm = () => {
         signatureImage = await pdfDoc.embedPng(signatureDataUrl);
       }
 
-      // Add a new page for the signature
-      const signaturePage = pdfDoc.addPage(PageSizes.Letter);
-      if (signatureImage) {
-        signaturePage.drawImage(signatureImage, {
-          x: 50,
-          y: signaturePage.getHeight() - 200,
-          width: 200,
-          height: 150,
-        });
-      }
+// Draw signature on the same page as form fields (page 0)
+const [firstPage] = pdfDoc.getPages();
+
+if (signatureImage) {
+  firstPage.drawImage(signatureImage, {
+    x: 400,  // Adjust based on actual signature box position
+    y: 80,   // Adjust to match vertical position of the box
+    width: 150,
+    height: 50,
+  });
+}
+
 
       const pdfBytes = await pdfDoc.save();
       await uploadReport(pdfBytes);
