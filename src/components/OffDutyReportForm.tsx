@@ -194,7 +194,7 @@ if (signatureImage) {
           onChange={handleChange}
           className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
         >
-          <option value="">Select Shift</option>
+          <option value="">Hour Duration</option>
           <option value="1-4 Hours">1-4 Hours</option>
           <option value="More than 4 hours">More than 4 hours</option>
         </select>
