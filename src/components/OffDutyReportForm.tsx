@@ -161,7 +161,7 @@ if (signatureImage) {
 
       {[
         { label: 'Badge', name: 'badge' },
-        { label: 'Name', name: 'name' },
+        { label: 'Officer Name', name: 'name' },
         { label: 'Date (worked)', name: 'date' },
         { label: 'Begin Time', name: 'beginTime' },
         { label: 'End Time', name: 'endTime' },
